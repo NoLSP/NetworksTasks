@@ -1,0 +1,5 @@
+﻿whois.ripe.net
+whois.arin.net
+whois.lacnic.net
+whois.afrinic.net
+whois.apnic.net

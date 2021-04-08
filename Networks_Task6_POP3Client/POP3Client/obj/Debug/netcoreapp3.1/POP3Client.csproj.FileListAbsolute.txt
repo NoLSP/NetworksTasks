@@ -1,0 +1,13 @@
+C:\Users\Artem\Desktop\POP3Client\POP3Client\bin\Debug\netcoreapp3.1\POP3Client.exe
+C:\Users\Artem\Desktop\POP3Client\POP3Client\obj\Debug\netcoreapp3.1\POP3Client.csprojAssemblyReference.cache
+C:\Users\Artem\Desktop\POP3Client\POP3Client\obj\Debug\netcoreapp3.1\POP3Client.AssemblyInfoInputs.cache
+C:\Users\Artem\Desktop\POP3Client\POP3Client\obj\Debug\netcoreapp3.1\POP3Client.AssemblyInfo.cs
+C:\Users\Artem\Desktop\POP3Client\POP3Client\bin\Debug\netcoreapp3.1\POP3Client.deps.json
+C:\Users\Artem\Desktop\POP3Client\POP3Client\bin\Debug\netcoreapp3.1\POP3Client.runtimeconfig.json
+C:\Users\Artem\Desktop\POP3Client\POP3Client\bin\Debug\netcoreapp3.1\POP3Client.runtimeconfig.dev.json
+C:\Users\Artem\Desktop\POP3Client\POP3Client\bin\Debug\netcoreapp3.1\POP3Client.dll
+C:\Users\Artem\Desktop\POP3Client\POP3Client\bin\Debug\netcoreapp3.1\POP3Client.pdb
+C:\Users\Artem\Desktop\POP3Client\POP3Client\bin\Debug\netcoreapp3.1\OpenPop.dll
+C:\Users\Artem\Desktop\POP3Client\POP3Client\obj\Debug\netcoreapp3.1\POP3Client.csproj.CopyComplete
+C:\Users\Artem\Desktop\POP3Client\POP3Client\obj\Debug\netcoreapp3.1\POP3Client.dll
+C:\Users\Artem\Desktop\POP3Client\POP3Client\obj\Debug\netcoreapp3.1\POP3Client.pdb

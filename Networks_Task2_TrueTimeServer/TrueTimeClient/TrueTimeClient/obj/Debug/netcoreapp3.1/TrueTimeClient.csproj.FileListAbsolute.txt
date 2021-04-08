@@ -1,0 +1,11 @@
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\bin\Debug\netcoreapp3.1\TrueTimeClient.exe
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\bin\Debug\netcoreapp3.1\TrueTimeClient.deps.json
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\bin\Debug\netcoreapp3.1\TrueTimeClient.runtimeconfig.json
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\bin\Debug\netcoreapp3.1\TrueTimeClient.runtimeconfig.dev.json
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\bin\Debug\netcoreapp3.1\TrueTimeClient.dll
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\bin\Debug\netcoreapp3.1\TrueTimeClient.pdb
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\obj\Debug\netcoreapp3.1\TrueTimeClient.csprojAssemblyReference.cache
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\obj\Debug\netcoreapp3.1\TrueTimeClient.AssemblyInfoInputs.cache
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\obj\Debug\netcoreapp3.1\TrueTimeClient.AssemblyInfo.cs
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\obj\Debug\netcoreapp3.1\TrueTimeClient.dll
+C:\Users\Artem\Desktop\TrueTimeClient\TrueTimeClient\obj\Debug\netcoreapp3.1\TrueTimeClient.pdb

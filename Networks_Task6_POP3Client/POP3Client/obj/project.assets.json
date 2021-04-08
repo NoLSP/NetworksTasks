@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "OpenPop.NET/2.0.6.1120": {
+        "type": "package",
+        "compile": {
+          "lib/net40/OpenPop.dll": {}
+        },
+        "runtime": {
+          "lib/net40/OpenPop.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OpenPop.NET/2.0.6.1120": {
+      "sha512": "NKgNRQAMJOTSnefCt3yfoQ8fPYml46Mwzq6m9OPwzmtKbXLXptUKaMnUjOoISpSowv8EclRVuv6DJXtZPJfcKQ==",
+      "type": "package",
+      "path": "openpop.net/2.0.6.1120",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/OpenPop.dll",
+        "lib/net40/OpenPop.dll",
+        "openpop.net.2.0.6.1120.nupkg.sha512",
+        "openpop.net.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "OpenPop.NET >= 2.0.6.1120"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Artem\\.nuget\\packages\\": {},
+    "G:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Artem\\Desktop\\POP3Client\\POP3Client\\POP3Client.csproj",
+      "projectName": "POP3Client",
+      "projectPath": "C:\\Users\\Artem\\Desktop\\POP3Client\\POP3Client\\POP3Client.csproj",
+      "packagesPath": "C:\\Users\\Artem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Artem\\Desktop\\POP3Client\\POP3Client\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "G:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "OpenPop.NET": {
+            "target": "Package",
+            "version": "[2.0.6.1120, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"OpenPop.NET 2.0.6.1120\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "OpenPop.NET",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

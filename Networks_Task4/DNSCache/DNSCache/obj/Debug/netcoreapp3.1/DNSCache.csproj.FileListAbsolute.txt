@@ -1,0 +1,11 @@
+C:\Users\Artem\Desktop\DNSCache\DNSCache\obj\Debug\netcoreapp3.1\DNSCache.csprojAssemblyReference.cache
+C:\Users\Artem\Desktop\DNSCache\DNSCache\obj\Debug\netcoreapp3.1\DNSCache.AssemblyInfoInputs.cache
+C:\Users\Artem\Desktop\DNSCache\DNSCache\obj\Debug\netcoreapp3.1\DNSCache.AssemblyInfo.cs
+C:\Users\Artem\Desktop\DNSCache\DNSCache\bin\Debug\netcoreapp3.1\DNSCache.exe
+C:\Users\Artem\Desktop\DNSCache\DNSCache\bin\Debug\netcoreapp3.1\DNSCache.deps.json
+C:\Users\Artem\Desktop\DNSCache\DNSCache\bin\Debug\netcoreapp3.1\DNSCache.runtimeconfig.json
+C:\Users\Artem\Desktop\DNSCache\DNSCache\bin\Debug\netcoreapp3.1\DNSCache.runtimeconfig.dev.json
+C:\Users\Artem\Desktop\DNSCache\DNSCache\bin\Debug\netcoreapp3.1\DNSCache.dll
+C:\Users\Artem\Desktop\DNSCache\DNSCache\bin\Debug\netcoreapp3.1\DNSCache.pdb
+C:\Users\Artem\Desktop\DNSCache\DNSCache\obj\Debug\netcoreapp3.1\DNSCache.dll
+C:\Users\Artem\Desktop\DNSCache\DNSCache\obj\Debug\netcoreapp3.1\DNSCache.pdb

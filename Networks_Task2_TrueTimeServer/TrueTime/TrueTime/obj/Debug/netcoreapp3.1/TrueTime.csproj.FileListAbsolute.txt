@@ -1,0 +1,11 @@
+C:\Users\Artem\Desktop\TrueTime\TrueTime\bin\Debug\netcoreapp3.1\TrueTime.exe
+C:\Users\Artem\Desktop\TrueTime\TrueTime\bin\Debug\netcoreapp3.1\TrueTime.deps.json
+C:\Users\Artem\Desktop\TrueTime\TrueTime\bin\Debug\netcoreapp3.1\TrueTime.runtimeconfig.json
+C:\Users\Artem\Desktop\TrueTime\TrueTime\bin\Debug\netcoreapp3.1\TrueTime.runtimeconfig.dev.json
+C:\Users\Artem\Desktop\TrueTime\TrueTime\bin\Debug\netcoreapp3.1\TrueTime.dll
+C:\Users\Artem\Desktop\TrueTime\TrueTime\bin\Debug\netcoreapp3.1\TrueTime.pdb
+C:\Users\Artem\Desktop\TrueTime\TrueTime\obj\Debug\netcoreapp3.1\TrueTime.csprojAssemblyReference.cache
+C:\Users\Artem\Desktop\TrueTime\TrueTime\obj\Debug\netcoreapp3.1\TrueTime.AssemblyInfoInputs.cache
+C:\Users\Artem\Desktop\TrueTime\TrueTime\obj\Debug\netcoreapp3.1\TrueTime.AssemblyInfo.cs
+C:\Users\Artem\Desktop\TrueTime\TrueTime\obj\Debug\netcoreapp3.1\TrueTime.dll
+C:\Users\Artem\Desktop\TrueTime\TrueTime\obj\Debug\netcoreapp3.1\TrueTime.pdb

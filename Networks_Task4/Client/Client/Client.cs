@@ -10,7 +10,7 @@ namespace DNSCache
     public static class Client
     {
         private static string ip = "127.0.0.1";
-        private static int port = 53;
+        private static int port = 80;
         private static string hostName = "habrahabr.ru";
         private static byte[] type = new byte[2] { 0x00, 0x01 };//по умолчанию тип А
 

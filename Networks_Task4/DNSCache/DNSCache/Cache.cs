@@ -12,11 +12,13 @@ namespace DNSCache
         private Dictionary<string, byte[]> cache = new Dictionary<string, byte[]>();
         private Dictionary<string, int> ttls = new Dictionary<string, int>();
         private Timer cleaner;
+        private int timerElapsedSeconds = 2;
+        private object locker = new object();
 
         public Cache()
         {
             ReadCache();
-            cleaner = new Timer(2000);
+            cleaner = new Timer(timerElapsedSeconds * 1000);
             cleaner.Elapsed += Cleaner_Elapsed;
             cleaner.Start();
         }
@@ -29,24 +31,42 @@ namespace DNSCache
             var oldDateTime = DateTime.FromFileTime(time);
             var now = DateTime.Now;
 
-            foreach(var file in Directory.GetFiles("Cache/Info"))
+            if (!Directory.Exists("Cache/Info"))
             {
-                cache.Add((new FileInfo(file).Name).Split(".")[0], File.ReadAllBytes(file));
+                var dir = new DirectoryInfo("Cache/Info");
+                dir.Create();
             }
 
-            foreach (var file in Directory.GetFiles("Cache/ttls"))
+            if (!Directory.Exists("Cache/ttls"))
             {
-                ttls.Add((new FileInfo(file).Name).Split(".")[0], int.Parse(File.ReadAllLines(file)[0]));
+                var dir = new DirectoryInfo("Cache/ttls");
+                dir.Create();
             }
+
+            lock (locker)
+            {
+                foreach (var file in Directory.GetFiles("Cache/Info"))
+                {
+                    cache.Add((new FileInfo(file).Name).Split(".")[0], File.ReadAllBytes(file));
+                }
+            }
+
+            lock (locker)
+            {
+                foreach (var file in Directory.GetFiles("Cache/ttls"))
+                {
+                    ttls.Add((new FileInfo(file).Name).Split(".")[0], int.Parse(File.ReadAllLines(file)[0]));
+                }
+            }
+
             clean(now, oldDateTime);
-
         }
 
-        public void clean(DateTime now, DateTime old)
+        private void clean(DateTime now, DateTime old)
         {
             foreach (var key in cache.Keys)
             {
-                ttls[key] -= (int) ((now - old).TotalSeconds);
+                ttls[key] -= (int)((now - old).TotalSeconds);
                 if (ttls[key] <= 0)
                 {
                     cache.Remove(key);
@@ -70,23 +90,32 @@ namespace DNSCache
             dir = new DirectoryInfo("Cache/ttls");
             dir.Create();
 
-            foreach(var key in cache.Keys)
+            lock (locker)
             {
-                File.WriteAllBytes("Cache/Info/" + key + ".txt", cache[key]);
-                File.WriteAllText("Cache/ttls/" + key + ".txt", ttls[key].ToString());
+                foreach (var key in cache.Keys)
+                {
+                    File.WriteAllBytes("Cache/Info/" + key + ".txt", cache[key]);
+                    File.WriteAllText("Cache/ttls/" + key + ".txt", ttls[key].ToString());
+                }
+                File.WriteAllText("Cache/time.txt", DateTime.Now.ToFileTime() + "");
             }
-            File.WriteAllText("Cache/time.txt", DateTime.Now.ToFileTime() + "");
         }
 
         private void Cleaner_Elapsed(object sender, ElapsedEventArgs e)
         {
-            foreach(var key in ttls.Keys)
+            lock (locker)
             {
-                ttls[key] -= 2;
-                if (ttls[key] <= 0)
+                string[] keys = new string[ttls.Keys.Count];
+                ttls.Keys.CopyTo(keys, 0);
+
+                foreach (var key in keys)
                 {
-                    cache.Remove(key);
-                    ttls.Remove(key);
+                    ttls[key] -= timerElapsedSeconds;
+                    if (ttls[key] <= 0)
+                    {
+                        cache.Remove(key);
+                        ttls.Remove(key);
+                    }
                 }
             }
         }
@@ -110,8 +139,11 @@ namespace DNSCache
 
         public void add(byte[] hostAndType, byte[] data, int ttl)
         {
-            cache.Add(getKey(hostAndType), data);
-            ttls.Add(getKey(hostAndType), ttl);
+            lock (locker)
+            {
+                cache.Add(getKey(hostAndType), data);
+                ttls.Add(getKey(hostAndType), ttl);
+            }
         }
     }
 }

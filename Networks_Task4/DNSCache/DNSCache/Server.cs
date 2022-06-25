@@ -10,7 +10,7 @@ namespace DNSCache
 {
     public static class Server
     {
-        private const int port = 53;
+        private const int port = 80;
         private static string IpAddress = "127.0.0.1";
         private static bool close = false;
 
@@ -162,11 +162,15 @@ namespace DNSCache
                 var prefix = ans.Take(startIndex).ToArray();
                 prefix[6] = 0x00; prefix[7] = 0x01;
                 prefix[8] = prefix[9] = prefix[10] = prefix[11] = 0x00;//обнулил колличества записей кроме ансверс
+
                 var hostAndType = getHostAndType(ans, ref endIndex, startIndex);
                 var hostTypePrefix = ans.Skip(startIndex).Take(endIndex - startIndex).ToArray();
+
                 var clazz = new byte[2] { ans[endIndex-2], ans[endIndex-1]};
+
                 var byteTTL = new byte[4] { ans[endIndex], ans[endIndex + 1], ans[endIndex + 2], ans[endIndex + 3] };
                 var ttl = Convert.ToInt32(ans[endIndex] + "" + ans[endIndex + 1] + ans[endIndex + 2] + ans[endIndex + 3]);
+
                 var byteDataLen = new byte[2] { ans[endIndex + 4], ans[endIndex + 5] };
                 var dataLength = Convert.ToInt32(ans[endIndex + 4] + "" + ans[endIndex + 5]);
                 endIndex += 6;
